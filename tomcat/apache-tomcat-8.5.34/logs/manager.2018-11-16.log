@@ -1,0 +1,104 @@
+16-Nov-2018 09:30:15.145 INFO [http-nio-8085-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+16-Nov-2018 09:30:15.146 INFO [http-nio-8085-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: init: Global resources are available
+16-Nov-2018 09:30:15.161 INFO [http-nio-8085-exec-6] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:40:21.653 INFO [http-nio-8085-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+16-Nov-2018 09:40:21.653 INFO [http-nio-8085-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: init: Global resources are available
+16-Nov-2018 09:40:21.654 INFO [http-nio-8085-exec-1] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:40:21.665 INFO [http-nio-8085-exec-4] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:40:21.665 INFO [http-nio-8085-exec-4] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 09:40:21.849 INFO [http-nio-8085-exec-5] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:40:21.852 INFO [http-nio-8085-exec-5] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:40:21.856 INFO [http-nio-8085-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:40:22.403 INFO [http-nio-8085-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:40:22.403 INFO [http-nio-8085-exec-6] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 09:40:39.624 INFO [http-nio-8085-exec-2] org.apache.catalina.core.ApplicationContext.log HTMLManager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:57:10.960 INFO [http-nio-8085-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:57:10.972 INFO [http-nio-8085-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:57:10.975 INFO [http-nio-8085-exec-13] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:57:11.496 INFO [http-nio-8085-exec-13] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:57:11.496 INFO [http-nio-8085-exec-13] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 09:57:11.584 INFO [http-nio-8085-exec-12] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:57:11.592 INFO [http-nio-8085-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:57:11.598 INFO [http-nio-8085-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:57:12.117 INFO [http-nio-8085-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:57:12.117 INFO [http-nio-8085-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 09:58:11.120 INFO [http-nio-8085-exec-14] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:58:11.130 INFO [http-nio-8085-exec-21] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:58:11.133 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:58:11.652 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:58:11.652 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 09:58:11.729 INFO [http-nio-8085-exec-21] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:58:11.734 INFO [http-nio-8085-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:58:11.737 INFO [http-nio-8085-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:58:12.255 INFO [http-nio-8085-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:58:12.258 INFO [http-nio-8085-exec-11] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 09:59:10.852 INFO [http-nio-8085-exec-21] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:59:10.866 INFO [http-nio-8085-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:59:10.869 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:59:11.383 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:59:11.383 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 09:59:11.459 INFO [http-nio-8085-exec-26] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:59:11.462 INFO [http-nio-8085-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 09:59:11.464 INFO [http-nio-8085-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:59:11.980 INFO [http-nio-8085-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 09:59:11.980 INFO [http-nio-8085-exec-19] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:00:10.909 INFO [http-nio-8085-exec-15] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:00:10.917 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:00:10.919 INFO [http-nio-8085-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:00:11.444 INFO [http-nio-8085-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:00:11.445 INFO [http-nio-8085-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:00:11.533 INFO [http-nio-8085-exec-27] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:00:11.541 INFO [http-nio-8085-exec-29] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:00:11.543 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:00:12.055 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:00:12.057 INFO [http-nio-8085-exec-17] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:01:11.282 INFO [http-nio-8085-exec-29] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:01:11.290 INFO [http-nio-8085-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:01:11.293 INFO [http-nio-8085-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:01:11.802 INFO [http-nio-8085-exec-30] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:01:11.802 INFO [http-nio-8085-exec-30] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:01:11.878 INFO [http-nio-8085-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:01:11.882 INFO [http-nio-8085-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:01:11.885 INFO [http-nio-8085-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:01:12.398 INFO [http-nio-8085-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:01:12.399 INFO [http-nio-8085-exec-24] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:02:10.933 INFO [http-nio-8085-exec-30] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:02:10.937 INFO [http-nio-8085-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:02:10.941 INFO [http-nio-8085-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:02:11.454 INFO [http-nio-8085-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:02:11.454 INFO [http-nio-8085-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:02:11.565 INFO [http-nio-8085-exec-34] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:02:11.567 INFO [http-nio-8085-exec-34] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:02:11.570 INFO [http-nio-8085-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:02:12.080 INFO [http-nio-8085-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:02:12.080 INFO [http-nio-8085-exec-28] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:03:10.940 INFO [http-nio-8085-exec-22] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:03:10.949 INFO [http-nio-8085-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:03:10.952 INFO [http-nio-8085-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:03:11.468 INFO [http-nio-8085-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:03:11.468 INFO [http-nio-8085-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:03:11.567 INFO [http-nio-8085-exec-36] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:03:11.569 INFO [http-nio-8085-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:03:11.572 INFO [http-nio-8085-exec-37] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:03:12.085 INFO [http-nio-8085-exec-37] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:03:12.085 INFO [http-nio-8085-exec-37] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:04:11.384 INFO [http-nio-8085-exec-38] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:04:11.393 INFO [http-nio-8085-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:04:11.396 INFO [http-nio-8085-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:04:11.905 INFO [http-nio-8085-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:04:11.905 INFO [http-nio-8085-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:04:12.022 INFO [http-nio-8085-exec-39] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:04:12.026 INFO [http-nio-8085-exec-40] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:04:12.029 INFO [http-nio-8085-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:04:12.540 INFO [http-nio-8085-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:04:12.541 INFO [http-nio-8085-exec-25] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:05:11.024 INFO [http-nio-8085-exec-40] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:05:11.039 INFO [http-nio-8085-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:05:11.042 INFO [http-nio-8085-exec-18] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:05:11.555 INFO [http-nio-8085-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:05:11.556 INFO [http-nio-8085-exec-42] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war
+16-Nov-2018 10:05:11.613 INFO [http-nio-8085-exec-43] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:05:11.615 INFO [http-nio-8085-exec-41] org.apache.catalina.core.ApplicationContext.log Manager: list: Listing contexts for virtual host 'localhost'
+16-Nov-2018 10:05:11.617 INFO [http-nio-8085-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: undeploy: Undeploying web application at '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:05:12.131 INFO [http-nio-8085-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: deploy: Deploying web application '/hello-world-war-1.0.0.war'
+16-Nov-2018 10:05:12.131 INFO [http-nio-8085-exec-20] org.apache.catalina.core.ApplicationContext.log Manager: Uploading WAR file to /opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war

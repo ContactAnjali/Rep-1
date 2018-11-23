@@ -1,0 +1,2 @@
+Nov 21, 2018 6:06:23 AM org.apache.catalina.core.ApplicationContext log
+INFO: org.tuckey.web.filters.urlrewrite.UrlRewriteFilter INFO: loaded (conf ok)

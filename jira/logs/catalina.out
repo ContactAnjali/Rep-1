@@ -1,0 +1,941 @@
+Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=384m; support was removed in 8.0
+Nov 21, 2018 6:05:57 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Nov 21, 2018 6:05:58 AM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8181"]
+Nov 21, 2018 6:05:58 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1715 ms
+Nov 21, 2018 6:05:58 AM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 21, 2018 6:05:58 AM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.55
+2018-11-21 06:06:14,102 localhost-startStop-1 INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+****************
+JIRA starting...
+****************
+
+2018-11-21 06:06:14,586 localhost-startStop-1 INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+___ Environment _____________________________
+
+     JIRA Build                                    : 6.4.10#64025-sha1:5b8b74079161cd76a20ab66dda52747ee6701bd6
+     Build Date                                    : Wed Aug 12 00:00:00 UTC 2015
+     JIRA Installation Type                        : Standalone
+     Application Server                            : Apache Tomcat/7.0.55 - Servlet API 3.0
+     Java Version                                  : 1.8.0_51 - Oracle Corporation
+     Current Working Directory                     : /opt/jira/bin
+     Maximum Allowable Memory                      : 742MB
+     Total Memory                                  : 371MB
+     Free Memory                                   : 223MB
+     Used Memory                                   : 148MB
+     Memory Pool: Code Cache                       : Code Cache: init = 2555904(2496K) used = 8442048(8244K) committed = 8585216(8384K) max = 251658240(245760K)
+     Memory Pool: Metaspace                        : Metaspace: init = 0(0K) used = 18635328(18198K) committed = 19136512(18688K) max = -1(-1K)
+     Memory Pool: Compressed Class Space           : Compressed Class Space: init = 0(0K) used = 2161288(2110K) committed = 2359296(2304K) max = 1073741824(1048576K)
+     Memory Pool: Eden Space                       : Eden Space: init = 107479040(104960K) used = 65552928(64016K) committed = 107479040(104960K) max = 214827008(209792K)
+     Memory Pool: Survivor Space                   : Survivor Space: init = 13369344(13056K) used = 10403856(10160K) committed = 13369344(13056K) max = 26804224(26176K)
+     Memory Pool: Tenured Gen                      : Tenured Gen: init = 268435456(262144K) used = 78570656(76729K) committed = 268435456(262144K) max = 536870912(524288K)
+     JVM Input Arguments                           : -Djava.util.logging.config.file=/opt/jira/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -XX:MaxPermSize=384m -Xms384m -Xmx768m -Djava.awt.headless=true -Datlassian.standalone=JIRA -Dorg.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER=true -Dmail.mime.decodeparameters=true -Dorg.dom4j.factory=com.atlassian.core.xml.InterningDocumentFactory -XX:+PrintGCDateStamps -XX:-OmitStackTraceInFastThrow -Djava.endorsed.dirs=/opt/jira/endorsed -Dcatalina.base=/opt/jira -Dcatalina.home=/opt/jira -Djava.io.tmpdir=/opt/jira/temp
+     Java Compatibility Information                : JIRA version = 6.4.10, Java Version = 1.8.0_51
+
+___ Java System Properties _________________
+
+     atlassian.standalone                          : JIRA
+     awt.toolkit                                   : sun.awt.X11.XToolkit
+     catalina.base                                 : /opt/jira
+     catalina.home                                 : /opt/jira
+     catalina.useNaming                            : true
+     common.loader                                 : ${catalina.base}/lib,
+                                                     ${catalina.base}/lib/*.jar,
+                                                     ${catalina.home}/lib,
+                                                     ${catalina.home}/lib/*.jar
+     file.encoding                                 : UTF-8
+     file.encoding.pkg                             : sun.io
+     java.awt.graphicsenv                          : sun.awt.X11GraphicsEnvironment
+     java.awt.headless                             : true
+     java.awt.printerjob                           : sun.print.PSPrinterJob
+     java.class.version                            : 52.0
+     java.home                                     : /opt/jira/jre
+     java.io.tmpdir                                : /opt/jira/temp
+     java.naming.factory.initial                   : org.apache.naming.java.javaURLContextFactory
+     java.naming.factory.url.pkgs                  : org.apache.naming
+     java.runtime.name                             : Java(TM) SE Runtime Environment
+     java.runtime.version                          : 1.8.0_51-b16
+     java.specification.name                       : Java Platform API Specification
+     java.specification.vendor                     : Oracle Corporation
+     java.specification.version                    : 1.8
+     java.util.logging.config.file                 : /opt/jira/conf/logging.properties
+     java.util.logging.manager                     : org.apache.juli.ClassLoaderLogManager
+     java.vendor                                   : Oracle Corporation
+     java.vendor.url                               : http://java.oracle.com/
+     java.vendor.url.bug                           : http://bugreport.sun.com/bugreport/
+     java.version                                  : 1.8.0_51
+     java.vm.info                                  : mixed mode
+     java.vm.name                                  : Java HotSpot(TM) 64-Bit Server VM
+     java.vm.specification.name                    : Java Virtual Machine Specification
+     java.vm.specification.vendor                  : Oracle Corporation
+     java.vm.specification.version                 : 1.8
+     java.vm.vendor                                : Oracle Corporation
+     java.vm.version                               : 25.51-b03
+     mail.mime.decodeparameters                    : true
+     org.apache.catalina.startup.ContextConfig.jarsToSkip : 
+     org.apache.catalina.startup.TldConfig.jarsToSkip : tomcat7-websocket.jar
+     org.apache.jasper.runtime.BodyContentImpl.LIMIT_BUFFER : true
+     org.dom4j.factory                             : com.atlassian.core.xml.InterningDocumentFactory
+     os.arch                                       : amd64
+     os.name                                       : Linux
+     os.version                                    : 4.15.0-1027-aws
+     package.access                                : sun.,
+                                                     org.apache.catalina.,
+                                                     org.apache.coyote.,
+                                                     org.apache.jasper.,
+                                                     org.apache.naming.resources.,
+                                                     org.apache.tomcat.
+     package.definition                            : sun.,
+                                                     java.,
+                                                     org.apache.catalina.,
+                                                     org.apache.coyote.,
+                                                     org.apache.jasper.,
+                                                     org.apache.naming.,
+                                                     org.apache.tomcat.
+     server.loader                                 : 
+     shared.loader                                 : 
+     sun.arch.data.model                           : 64
+     sun.boot.library.path                         : /opt/jira/jre/lib/amd64
+     sun.cpu.endian                                : little
+     sun.cpu.isalist                               : 
+     sun.io.unicode.encoding                       : UnicodeLittle
+     sun.java.command                              : org.apache.catalina.startup.Bootstrap start
+     sun.java.launcher                             : SUN_STANDARD
+     sun.jnu.encoding                              : UTF-8
+     sun.management.compiler                       : HotSpot 64-Bit Tiered Compilers
+     sun.os.patch.level                            : unknown
+     tomcat.util.buf.StringCache.byte.enabled      : true
+     tomcat.util.scan.DefaultJarScanner.jarsToSkip : bootstrap.jar,
+                                                     commons-daemon.jar,
+                                                     tomcat-juli.jar,
+                                                     annotations-api.jar,
+                                                     el-api.jar,
+                                                     jsp-api.jar,
+                                                     servlet-api.jar,
+                                                     websocket-api.jar,
+                                                     catalina.jar,
+                                                     catalina-ant.jar,
+                                                     catalina-ha.jar,
+                                                     catalina-tribes.jar,
+                                                     jasper.jar,
+                                                     jasper-el.jar,
+                                                     ecj-*.jar,
+                                                     tomcat-api.jar,
+                                                     tomcat-util.jar,
+                                                     tomcat-coyote.jar,
+                                                     tomcat-dbcp.jar,
+                                                     tomcat-jni.jar,
+                                                     tomcat-spdy.jar,
+                                                     tomcat-i18n-en.jar,
+                                                     tomcat-i18n-es.jar,
+                                                     tomcat-i18n-fr.jar,
+                                                     tomcat-i18n-ja.jar,
+                                                     tomcat-juli-adapters.jar,
+                                                     catalina-jmx-remote.jar,
+                                                     catalina-ws.jar,
+                                                     tomcat-jdbc.jar,
+                                                     tools.jar,
+                                                     commons-beanutils*.jar,
+                                                     commons-codec*.jar,
+                                                     commons-collections*.jar,
+                                                     commons-dbcp*.jar,
+                                                     commons-digester*.jar,
+                                                     commons-fileupload*.jar,
+                                                     commons-httpclient*.jar,
+                                                     commons-io*.jar,
+                                                     commons-lang*.jar,
+                                                     commons-logging*.jar,
+                                                     commons-math*.jar,
+                                                     commons-pool*.jar,
+                                                     jstl.jar,
+                                                     geronimo-spec-jaxrpc*.jar,
+                                                     wsdl4j*.jar,
+                                                     ant.jar,
+                                                     ant-junit*.jar,
+                                                     aspectj*.jar,
+                                                     jmx.jar,
+                                                     h2*.jar,
+                                                     hibernate*.jar,
+                                                     httpclient*.jar,
+                                                     jmx-tools.jar,
+                                                     jta*.jar,
+                                                     log4j.jar,
+                                                     log4j-1*.jar,
+                                                     mail*.jar,
+                                                     slf4j*.jar,
+                                                     xercesImpl.jar,
+                                                     xmlParserAPIs.jar,
+                                                     xml-apis.jar,
+                                                     junit.jar,
+                                                     junit-*.jar,
+                                                     hamcrest*.jar,
+                                                     org.hamcrest*.jar,
+                                                     ant-launcher.jar,
+                                                     cobertura-*.jar,
+                                                     asm-*.jar,
+                                                     dom4j-*.jar,
+                                                     icu4j-*.jar,
+                                                     jaxen-*.jar,
+                                                     jdom-*.jar,
+                                                     jetty-*.jar,
+                                                     oro-*.jar,
+                                                     servlet-api-*.jar,
+                                                     tagsoup-*.jar,
+                                                     xmlParserAPIs-*.jar,
+                                                     xom-*.jar
+     user.dir                                      : /opt/jira/bin
+     user.home                                     : /home/jira
+     user.language                                 : en
+     user.name                                     : jira
+     user.timezone                                 : Etc/UTC
+
+2018-11-21 06:06:15,098 localhost-startStop-1 INFO      [atlassian.jira.startup.JiraHomeStartupCheck] The jira.home directory '/var/atlassian/application-data/jira' is validated and locked for exclusive use by this instance.
+2018-11-21 06:06:15,144 localhost-startStop-1 INFO      [jira.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2018-11-21 06:06:15,514 localhost-startStop-1 INFO      [jira.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2018-11-21 06:06:15,514 localhost-startStop-1 WARN      [jira.config.database.DatabaseConfigurationManagerImpl] no defaultDS datasource
+2018-11-21 06:06:15,952 localhost-startStop-1 INFO      [atlassian.jira.startup.JiraStartupLogger] 
+
+___ Starting the JIRA Plugin System _________________
+
+2018-11-21 06:06:15,953 localhost-startStop-1 INFO      [atlassian.plugin.manager.DefaultPluginManager] Plugin system earlyStartup begun
+2018-11-21 06:06:21,063 localhost-startStop-1 INFO      [atlassian.plugin.loaders.ScanningPluginLoader] No plugins found to be deployed
+2018-11-21 06:06:21,289 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Resolving 15 plugins
+2018-11-21 06:06:21,289 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Enabling 15 plugins: [com.atlassian.auiplugin, com.atlassian.jira.jira-languages.en_UK, com.atlassian.jira.jira-languages.en_US, com.atlassian.plugins.less-transformer-plugin, com.atlassian.jira.jira-less-integration, com.atlassian.plugins.atlassian-plugins-webresource-plugin:3.1.5, com.atlassian.plugins.issue-status-plugin, com.atlassian.plugins.jquery, com.atlassian.soy.soy-template-plugin, jira.help.paths:1.0, jira.webresources:1.0, tac.jira.languages.de_DE, tac.jira.languages.es_ES, tac.jira.languages.fr_FR, tac.jira.languages.ja_JP]
+2018-11-21 06:06:21,347 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.plugins.atlassian-plugins-webresource-plugin' immediately ENABLED
+2018-11-21 06:06:21,393 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'jira.help.paths' immediately ENABLED
+2018-11-21 06:06:21,393 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'jira.webresources' immediately ENABLED
+2018-11-21 06:06:21,422 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Waiting for 12 plugins to finish ENABLING: [com.atlassian.plugins.less-transformer-plugin, com.atlassian.auiplugin, com.atlassian.jira.jira-less-integration, com.atlassian.plugins.jquery, tac.jira.languages.de_DE, tac.jira.languages.fr_FR, com.atlassian.jira.jira-languages.en_UK, com.atlassian.plugins.issue-status-plugin, com.atlassian.jira.jira-languages.en_US, com.atlassian.soy.soy-template-plugin, tac.jira.languages.ja_JP, tac.jira.languages.es_ES]
+2018-11-21 06:06:21,450 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.jira-languages.en_UK' is now ENABLED
+2018-11-21 06:06:21,450 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.jira-languages.en_US' is now ENABLED
+2018-11-21 06:06:21,451 localhost-startStop-1 INFO      [atlassian.plugin.util.WaitUntil] Plugins that have yet to be enabled: (10): [com.atlassian.plugins.less-transformer-plugin, com.atlassian.auiplugin, com.atlassian.jira.jira-less-integration, com.atlassian.plugins.jquery, tac.jira.languages.de_DE, tac.jira.languages.fr_FR, com.atlassian.plugins.issue-status-plugin, com.atlassian.soy.soy-template-plugin, tac.jira.languages.ja_JP, tac.jira.languages.es_ES], 59 seconds remaining
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.plugins.less-transformer-plugin' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.auiplugin' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.jira-less-integration' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.plugins.jquery' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'tac.jira.languages.de_DE' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'tac.jira.languages.fr_FR' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.plugins.issue-status-plugin' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.soy.soy-template-plugin' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'tac.jira.languages.ja_JP' is now ENABLED
+2018-11-21 06:06:22,451 localhost-startStop-1 INFO      [atlassian.plugin.manager.PluginEnabler] Plugin 'tac.jira.languages.es_ES' is now ENABLED
+2018-11-21 06:06:22,585 localhost-startStop-1 INFO      [atlassian.plugin.manager.DefaultPluginManager] Plugin system earlyStartup finished in 0:00:06.631
+2018-11-21 06:06:22,848 localhost-startStop-1 INFO      [jira.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2018-11-21 06:06:22,866 localhost-startStop-1 INFO      [jira.instrumentation.external.DatabaseExternalGauges] Installing DBCP monitoring instruments: DatabaseExternalGauges.JiraDbcpInstruments[instruments=[DBCP_MAX, DBCP_ACTIVE, DBCP_IDLE],objectName=com.atlassian.jira:name=BasicDataSource]
+2018-11-21 06:06:22,957 localhost-startStop-1 INFO      [atlassian.jira.startup.JiraStartupLogger] Running JIRA startup checks.
+2018-11-21 06:06:22,960 localhost-startStop-1 INFO      [atlassian.jira.startup.JiraStartupLogger] JIRA pre-database startup checks completed successfully.
+2018-11-21 06:06:23,228 localhost-startStop-1 INFO      [jira.config.database.DatabaseConfigurationManagerImpl] The database is not yet configured
+2018-11-21 06:06:23,228 localhost-startStop-1 INFO      [jira.config.database.DatabaseConfigurationManagerImpl] Enqueuing Database Checklist Launcher on post-database-configured-but-pre-database-activated queue
+2018-11-21 06:06:23,231 localhost-startStop-1 INFO      [jira.config.database.DatabaseConfigurationManagerImpl] The database is not yet configured
+2018-11-21 06:06:23,231 localhost-startStop-1 INFO      [jira.config.database.DatabaseConfigurationManagerImpl] Enqueuing Post database-configuration launchers on post-database-activated queue
+2018-11-21 06:06:23,283 localhost-startStop-1 INFO      [atlassian.jira.startup.LauncherContextListener] Memory Usage:
+---------------------------------------------------------------------------------
+  Heap memory     :  Used:   62 MiB.  Committed:  371 MiB.  Max:  742 MiB
+  Non-heap memory :  Used:   50 MiB.  Committed:   51 MiB.  Max: 1264 MiB
+---------------------------------------------------------------------------------
+  TOTAL           :  Used:  112 MiB.  Committed:  423 MiB.  Max: 2006 MiB
+---------------------------------------------------------------------------------
+Nov 21, 2018 6:06:23 AM org.apache.catalina.startup.HostConfig start
+SEVERE: Unable to create directory for deployment: /opt/jira/conf/Catalina/localhost
+Nov 21, 2018 6:06:23 AM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8181"]
+Nov 21, 2018 6:06:23 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 24938 ms
+Nov 21, 2018 6:06:47 AM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-11-21 06:19:51,534 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [jira.config.database.SystemDatabaseConfigurationLoader] Storing database configuration in /var/atlassian/application-data/jira/dbconfig.xml
+2018-11-21 06:19:51,872 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Database Product Name is HSQL Database Engine
+2018-11-21 06:19:51,872 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Database Product Version is 1.8.0
+2018-11-21 06:19:51,872 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Database Driver Name is HSQL Database Engine Driver
+2018-11-21 06:19:51,872 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Database Driver Version is 1.8.0
+2018-11-21 06:19:51,886 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Action" has no table in the database
+2018-11-21 06:19:51,894 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.jiraaction"
+2018-11-21 06:19:51,894 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Application" has no table in the database
+2018-11-21 06:19:51,903 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_application"
+2018-11-21 06:19:51,903 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ApplicationUser" has no table in the database
+2018-11-21 06:19:51,903 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.app_user"
+2018-11-21 06:19:51,903 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "AuditChangedValue" has no table in the database
+2018-11-21 06:19:51,903 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.audit_changed_value"
+2018-11-21 06:19:51,903 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "AuditItem" has no table in the database
+2018-11-21 06:19:51,904 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.audit_item"
+2018-11-21 06:19:51,904 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "AuditLog" has no table in the database
+2018-11-21 06:19:51,904 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.audit_log"
+2018-11-21 06:19:51,904 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Avatar" has no table in the database
+2018-11-21 06:19:51,905 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.avatar"
+2018-11-21 06:19:51,905 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ChangeGroup" has no table in the database
+2018-11-21 06:19:51,905 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.changegroup"
+2018-11-21 06:19:51,905 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ChangeItem" has no table in the database
+2018-11-21 06:19:51,905 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.changeitem"
+2018-11-21 06:19:51,905 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ClusterLockStatus" has no table in the database
+2018-11-21 06:19:51,906 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.clusterlockstatus"
+2018-11-21 06:19:51,906 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ClusterMessage" has no table in the database
+2018-11-21 06:19:51,906 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.clustermessage"
+2018-11-21 06:19:51,906 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ClusterNode" has no table in the database
+2018-11-21 06:19:51,906 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.clusternode"
+2018-11-21 06:19:51,906 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ClusterNodeHeartbeat" has no table in the database
+2018-11-21 06:19:51,907 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.clusternodeheartbeat"
+2018-11-21 06:19:51,907 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ClusteredJob" has no table in the database
+2018-11-21 06:19:51,918 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.clusteredjob"
+2018-11-21 06:19:51,918 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ColumnLayout" has no table in the database
+2018-11-21 06:19:51,919 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.columnlayout"
+2018-11-21 06:19:51,919 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ColumnLayoutItem" has no table in the database
+2018-11-21 06:19:51,919 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.columnlayoutitem"
+2018-11-21 06:19:51,919 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Component" has no table in the database
+2018-11-21 06:19:51,919 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.component"
+2018-11-21 06:19:51,920 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ConfigurationContext" has no table in the database
+2018-11-21 06:19:51,920 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.configurationcontext"
+2018-11-21 06:19:51,920 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "CustomField" has no table in the database
+2018-11-21 06:19:51,920 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.customfield"
+2018-11-21 06:19:51,920 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "CustomFieldOption" has no table in the database
+2018-11-21 06:19:51,921 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.customfieldoption"
+2018-11-21 06:19:51,921 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "CustomFieldValue" has no table in the database
+2018-11-21 06:19:51,921 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.customfieldvalue"
+2018-11-21 06:19:51,921 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Directory" has no table in the database
+2018-11-21 06:19:51,921 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_directory"
+2018-11-21 06:19:51,921 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "DirectoryAttribute" has no table in the database
+2018-11-21 06:19:51,922 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_directory_attribute"
+2018-11-21 06:19:51,922 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "DirectoryOperation" has no table in the database
+2018-11-21 06:19:51,922 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_directory_operation"
+2018-11-21 06:19:51,922 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "DraftWorkflow" has no table in the database
+2018-11-21 06:19:51,922 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.jiradraftworkflows"
+2018-11-21 06:19:51,922 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "DraftWorkflowScheme" has no table in the database
+2018-11-21 06:19:51,923 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.draftworkflowscheme"
+2018-11-21 06:19:51,923 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "DraftWorkflowSchemeEntity" has no table in the database
+2018-11-21 06:19:51,927 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.draftworkflowschemeentity"
+2018-11-21 06:19:51,927 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "EntityProperty" has no table in the database
+2018-11-21 06:19:51,928 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.entity_property"
+2018-11-21 06:19:51,929 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "EntityPropertyIndexDocument" has no table in the database
+2018-11-21 06:19:51,932 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.entity_property_index_document"
+2018-11-21 06:19:51,932 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "EventType" has no table in the database
+2018-11-21 06:19:51,932 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.jiraeventtype"
+2018-11-21 06:19:51,932 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ExternalEntity" has no table in the database
+2018-11-21 06:19:51,932 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.external_entities"
+2018-11-21 06:19:51,932 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ExternalGadget" has no table in the database
+2018-11-21 06:19:51,933 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.externalgadget"
+2018-11-21 06:19:51,933 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FavouriteAssociations" has no table in the database
+2018-11-21 06:19:51,934 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.favouriteassociations"
+2018-11-21 06:19:51,934 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Feature" has no table in the database
+2018-11-21 06:19:51,934 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.feature"
+2018-11-21 06:19:51,934 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldConfigScheme" has no table in the database
+2018-11-21 06:19:51,934 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldconfigscheme"
+2018-11-21 06:19:51,934 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldConfigSchemeIssueType" has no table in the database
+2018-11-21 06:19:51,935 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldconfigschemeissuetype"
+2018-11-21 06:19:51,935 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldConfiguration" has no table in the database
+2018-11-21 06:19:51,935 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldconfiguration"
+2018-11-21 06:19:51,935 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldLayout" has no table in the database
+2018-11-21 06:19:51,935 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldlayout"
+2018-11-21 06:19:51,935 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldLayoutItem" has no table in the database
+2018-11-21 06:19:51,936 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldlayoutitem"
+2018-11-21 06:19:51,936 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldLayoutScheme" has no table in the database
+2018-11-21 06:19:51,936 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldlayoutscheme"
+2018-11-21 06:19:51,936 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldLayoutSchemeAssociation" has no table in the database
+2018-11-21 06:19:51,937 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldlayoutschemeassociation"
+2018-11-21 06:19:51,937 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldLayoutSchemeEntity" has no table in the database
+2018-11-21 06:19:51,937 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldlayoutschemeentity"
+2018-11-21 06:19:51,937 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldScreen" has no table in the database
+2018-11-21 06:19:51,937 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldscreen"
+2018-11-21 06:19:51,937 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldScreenLayoutItem" has no table in the database
+2018-11-21 06:19:51,937 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldscreenlayoutitem"
+2018-11-21 06:19:51,938 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldScreenScheme" has no table in the database
+2018-11-21 06:19:51,938 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldscreenscheme"
+2018-11-21 06:19:51,938 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldScreenSchemeItem" has no table in the database
+2018-11-21 06:19:51,938 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldscreenschemeitem"
+2018-11-21 06:19:51,938 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FieldScreenTab" has no table in the database
+2018-11-21 06:19:51,938 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fieldscreentab"
+2018-11-21 06:19:51,938 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FileAttachment" has no table in the database
+2018-11-21 06:19:51,939 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.fileattachment"
+2018-11-21 06:19:51,939 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "FilterSubscription" has no table in the database
+2018-11-21 06:19:51,948 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.filtersubscription"
+2018-11-21 06:19:51,948 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "GadgetUserPreference" has no table in the database
+2018-11-21 06:19:51,948 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.gadgetuserpreference"
+2018-11-21 06:19:51,949 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "GenericConfiguration" has no table in the database
+2018-11-21 06:19:51,949 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.genericconfiguration"
+2018-11-21 06:19:51,949 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "GlobalPermissionEntry" has no table in the database
+2018-11-21 06:19:51,949 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.globalpermissionentry"
+2018-11-21 06:19:51,949 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Group" has no table in the database
+2018-11-21 06:19:51,949 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_group"
+2018-11-21 06:19:51,950 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "GroupAttribute" has no table in the database
+2018-11-21 06:19:51,950 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_group_attributes"
+2018-11-21 06:19:51,950 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Issue" has no table in the database
+2018-11-21 06:19:51,950 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.jiraissue"
+2018-11-21 06:19:51,950 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "IssueLink" has no table in the database
+2018-11-21 06:19:51,951 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.issuelink"
+2018-11-21 06:19:51,951 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "IssueLinkType" has no table in the database
+2018-11-21 06:19:51,951 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.issuelinktype"
+2018-11-21 06:19:51,951 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "IssueSecurityScheme" has no table in the database
+2018-11-21 06:19:51,951 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.issuesecurityscheme"
+2018-11-21 06:19:51,951 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "IssueType" has no table in the database
+2018-11-21 06:19:51,952 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.issuetype"
+2018-11-21 06:19:51,952 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "IssueTypeScreenScheme" has no table in the database
+2018-11-21 06:19:51,952 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.issuetypescreenscheme"
+2018-11-21 06:19:51,952 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "IssueTypeScreenSchemeEntity" has no table in the database
+2018-11-21 06:19:51,952 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.issuetypescreenschemeentity"
+2018-11-21 06:19:51,952 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZBlobTriggers" has no table in the database
+2018-11-21 06:19:51,953 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_BLOB_TRIGGERS"
+2018-11-21 06:19:51,953 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZCalendars" has no table in the database
+2018-11-21 06:19:51,953 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_CALENDARS"
+2018-11-21 06:19:51,953 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZCronTriggers" has no table in the database
+2018-11-21 06:19:51,954 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_CRON_TRIGGERS"
+2018-11-21 06:19:51,954 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZFiredTriggers" has no table in the database
+2018-11-21 06:19:51,954 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_FIRED_TRIGGERS"
+2018-11-21 06:19:51,954 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZJobDetails" has no table in the database
+2018-11-21 06:19:51,954 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_JOB_DETAILS"
+2018-11-21 06:19:51,954 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZJobListeners" has no table in the database
+2018-11-21 06:19:51,955 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_JOB_LISTENERS"
+2018-11-21 06:19:51,955 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZLocks" has no table in the database
+2018-11-21 06:19:51,967 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_LOCKS"
+2018-11-21 06:19:51,967 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZPausedTriggerGroups" has no table in the database
+2018-11-21 06:19:51,967 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_PAUSED_TRIGGER_GRPS"
+2018-11-21 06:19:51,967 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZSchedulerState" has no table in the database
+2018-11-21 06:19:51,968 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_SCHEDULER_STATE"
+2018-11-21 06:19:51,968 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZSimplePropTriggers" has no table in the database
+2018-11-21 06:19:51,968 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_SIMPROP_TRIGGERS"
+2018-11-21 06:19:51,968 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZSimpleTriggers" has no table in the database
+2018-11-21 06:19:51,969 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_SIMPLE_TRIGGERS"
+2018-11-21 06:19:51,969 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZTriggerListeners" has no table in the database
+2018-11-21 06:19:51,969 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_TRIGGER_LISTENERS"
+2018-11-21 06:19:51,969 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "JQRTZTriggers" has no table in the database
+2018-11-21 06:19:51,969 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.JQUARTZ_TRIGGERS"
+2018-11-21 06:19:51,969 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Label" has no table in the database
+2018-11-21 06:19:51,970 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.label"
+2018-11-21 06:19:51,970 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "LicenseRoleDefault" has no table in the database
+2018-11-21 06:19:51,970 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.licenserolesdefault"
+2018-11-21 06:19:51,970 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "LicenseRoleGroup" has no table in the database
+2018-11-21 06:19:51,970 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.licenserolesgroup"
+2018-11-21 06:19:51,970 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ListenerConfig" has no table in the database
+2018-11-21 06:19:51,971 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.listenerconfig"
+2018-11-21 06:19:51,971 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "MailServer" has no table in the database
+2018-11-21 06:19:51,979 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.mailserver"
+2018-11-21 06:19:51,979 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ManagedConfigurationItem" has no table in the database
+2018-11-21 06:19:51,980 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.managedconfigurationitem"
+2018-11-21 06:19:51,980 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Membership" has no table in the database
+2018-11-21 06:19:51,981 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_membership"
+2018-11-21 06:19:51,981 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "MovedIssueKey" has no table in the database
+2018-11-21 06:19:51,981 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.moved_issue_key"
+2018-11-21 06:19:51,981 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "NodeAssociation" has no table in the database
+2018-11-21 06:19:51,982 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.nodeassociation"
+2018-11-21 06:19:51,982 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "NodeIndexCounter" has no table in the database
+2018-11-21 06:19:51,984 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.nodeindexcounter"
+2018-11-21 06:19:51,984 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Notification" has no table in the database
+2018-11-21 06:19:51,987 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.notification"
+2018-11-21 06:19:51,987 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "NotificationInstance" has no table in the database
+2018-11-21 06:19:51,987 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.notificationinstance"
+2018-11-21 06:19:51,987 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "NotificationScheme" has no table in the database
+2018-11-21 06:19:51,987 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.notificationscheme"
+2018-11-21 06:19:51,988 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OAuthConsumer" has no table in the database
+2018-11-21 06:19:51,988 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.oauthconsumer"
+2018-11-21 06:19:51,988 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OAuthConsumerToken" has no table in the database
+2018-11-21 06:19:51,988 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.oauthconsumertoken"
+2018-11-21 06:19:51,988 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OAuthServiceProviderConsumer" has no table in the database
+2018-11-21 06:19:51,989 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.oauthspconsumer"
+2018-11-21 06:19:51,989 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OAuthServiceProviderToken" has no table in the database
+2018-11-21 06:19:51,989 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.oauthsptoken"
+2018-11-21 06:19:51,989 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSCurrentStep" has no table in the database
+2018-11-21 06:19:51,989 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.OS_CURRENTSTEP"
+2018-11-21 06:19:51,989 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSCurrentStepPrev" has no table in the database
+2018-11-21 06:19:51,990 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.OS_CURRENTSTEP_PREV"
+2018-11-21 06:19:51,990 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSGroup" has no table in the database
+2018-11-21 06:19:51,990 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.groupbase"
+2018-11-21 06:19:51,990 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSHistoryStep" has no table in the database
+2018-11-21 06:19:51,990 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.OS_HISTORYSTEP"
+2018-11-21 06:19:51,990 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSHistoryStepPrev" has no table in the database
+2018-11-21 06:19:51,990 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.OS_HISTORYSTEP_PREV"
+2018-11-21 06:19:51,991 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSMembership" has no table in the database
+2018-11-21 06:19:51,991 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.membershipbase"
+2018-11-21 06:19:51,991 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSPropertyData" has no table in the database
+2018-11-21 06:19:52,000 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.propertydata"
+2018-11-21 06:19:52,000 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSPropertyDate" has no table in the database
+2018-11-21 06:19:52,000 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.propertydate"
+2018-11-21 06:19:52,000 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSPropertyDecimal" has no table in the database
+2018-11-21 06:19:52,001 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.propertydecimal"
+2018-11-21 06:19:52,001 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSPropertyEntry" has no table in the database
+2018-11-21 06:19:52,001 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.propertyentry"
+2018-11-21 06:19:52,001 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSPropertyNumber" has no table in the database
+2018-11-21 06:19:52,001 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.propertynumber"
+2018-11-21 06:19:52,001 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSPropertyString" has no table in the database
+2018-11-21 06:19:52,001 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.propertystring"
+2018-11-21 06:19:52,001 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSPropertyText" has no table in the database
+2018-11-21 06:19:52,002 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.propertytext"
+2018-11-21 06:19:52,002 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSUser" has no table in the database
+2018-11-21 06:19:52,002 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.userbase"
+2018-11-21 06:19:52,002 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OSWorkflowEntry" has no table in the database
+2018-11-21 06:19:52,002 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.OS_WFENTRY"
+2018-11-21 06:19:52,002 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "OptionConfiguration" has no table in the database
+2018-11-21 06:19:52,003 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.optionconfiguration"
+2018-11-21 06:19:52,003 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Permission" has no table in the database
+2018-11-21 06:19:52,015 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.jiraperms"
+2018-11-21 06:19:52,015 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "PermissionScheme" has no table in the database
+2018-11-21 06:19:52,016 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.permissionscheme"
+2018-11-21 06:19:52,016 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "PluginState" has no table in the database
+2018-11-21 06:19:52,016 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.pluginstate"
+2018-11-21 06:19:52,016 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "PluginVersion" has no table in the database
+2018-11-21 06:19:52,016 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.pluginversion"
+2018-11-21 06:19:52,016 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "PortalPage" has no table in the database
+2018-11-21 06:19:52,017 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.portalpage"
+2018-11-21 06:19:52,017 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "PortletConfiguration" has no table in the database
+2018-11-21 06:19:52,017 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.portletconfiguration"
+2018-11-21 06:19:52,017 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Priority" has no table in the database
+2018-11-21 06:19:52,017 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.priority"
+2018-11-21 06:19:52,017 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ProductLicense" has no table in the database
+2018-11-21 06:19:52,017 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.productlicense"
+2018-11-21 06:19:52,017 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Project" has no table in the database
+2018-11-21 06:19:52,018 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.project"
+2018-11-21 06:19:52,018 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ProjectCategory" has no table in the database
+2018-11-21 06:19:52,018 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.projectcategory"
+2018-11-21 06:19:52,018 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ProjectKey" has no table in the database
+2018-11-21 06:19:52,018 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.project_key"
+2018-11-21 06:19:52,018 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ProjectRole" has no table in the database
+2018-11-21 06:19:52,019 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.projectrole"
+2018-11-21 06:19:52,019 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ProjectRoleActor" has no table in the database
+2018-11-21 06:19:52,020 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.projectroleactor"
+2018-11-21 06:19:52,020 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "QRTZCalendars" has no table in the database
+2018-11-21 06:19:52,023 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.qrtz_calendars"
+2018-11-21 06:19:52,023 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "QRTZCronTriggers" has no table in the database
+2018-11-21 06:19:52,023 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.qrtz_cron_triggers"
+2018-11-21 06:19:52,023 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "QRTZFiredTriggers" has no table in the database
+2018-11-21 06:19:52,024 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.qrtz_fired_triggers"
+2018-11-21 06:19:52,024 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "QRTZJobDetails" has no table in the database
+2018-11-21 06:19:52,024 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.qrtz_job_details"
+2018-11-21 06:19:52,024 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "QRTZJobListeners" has no table in the database
+2018-11-21 06:19:52,024 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.qrtz_job_listeners"
+2018-11-21 06:19:52,024 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "QRTZSimpleTriggers" has no table in the database
+2018-11-21 06:19:52,025 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.qrtz_simple_triggers"
+2018-11-21 06:19:52,025 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "QRTZTriggerListeners" has no table in the database
+2018-11-21 06:19:52,025 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.qrtz_trigger_listeners"
+2018-11-21 06:19:52,025 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "QRTZTriggers" has no table in the database
+2018-11-21 06:19:52,025 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.qrtz_triggers"
+2018-11-21 06:19:52,025 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ReindexComponent" has no table in the database
+2018-11-21 06:19:52,026 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.reindex_component"
+2018-11-21 06:19:52,026 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ReindexRequest" has no table in the database
+2018-11-21 06:19:52,026 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.reindex_request"
+2018-11-21 06:19:52,026 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "RememberMeToken" has no table in the database
+2018-11-21 06:19:52,026 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.remembermetoken"
+2018-11-21 06:19:52,026 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "RemoteAddress" has no table in the database
+2018-11-21 06:19:52,026 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_application_address"
+2018-11-21 06:19:52,027 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "RemoteIssueLink" has no table in the database
+2018-11-21 06:19:52,027 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.remotelink"
+2018-11-21 06:19:52,032 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ReplicatedIndexOperation" has no table in the database
+2018-11-21 06:19:52,032 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.replicatedindexoperation"
+2018-11-21 06:19:52,040 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Resolution" has no table in the database
+2018-11-21 06:19:52,040 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.resolution"
+2018-11-21 06:19:52,040 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "RunDetails" has no table in the database
+2018-11-21 06:19:52,040 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.rundetails"
+2018-11-21 06:19:52,040 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "SchemeIssueSecurities" has no table in the database
+2018-11-21 06:19:52,041 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.schemeissuesecurities"
+2018-11-21 06:19:52,041 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "SchemeIssueSecurityLevels" has no table in the database
+2018-11-21 06:19:52,041 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.schemeissuesecuritylevels"
+2018-11-21 06:19:52,041 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "SchemePermissions" has no table in the database
+2018-11-21 06:19:52,046 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.schemepermissions"
+2018-11-21 06:19:52,046 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "SearchRequest" has no table in the database
+2018-11-21 06:19:52,046 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.searchrequest"
+2018-11-21 06:19:52,046 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "SequenceValueItem" has no table in the database
+2018-11-21 06:19:52,047 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.SEQUENCE_VALUE_ITEM"
+2018-11-21 06:19:52,047 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "ServiceConfig" has no table in the database
+2018-11-21 06:19:52,047 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.serviceconfig"
+2018-11-21 06:19:52,047 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "SharePermissions" has no table in the database
+2018-11-21 06:19:52,047 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.sharepermissions"
+2018-11-21 06:19:52,047 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Status" has no table in the database
+2018-11-21 06:19:52,048 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.issuestatus"
+2018-11-21 06:19:52,048 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "TrackbackPing" has no table in the database
+2018-11-21 06:19:52,048 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.trackback_ping"
+2018-11-21 06:19:52,048 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "TrustedApplication" has no table in the database
+2018-11-21 06:19:52,048 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.trustedapp"
+2018-11-21 06:19:52,048 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "UpgradeHistory" has no table in the database
+2018-11-21 06:19:52,048 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.upgradehistory"
+2018-11-21 06:19:52,048 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "UpgradeVersionHistory" has no table in the database
+2018-11-21 06:19:52,049 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.upgradeversionhistory"
+2018-11-21 06:19:52,049 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "User" has no table in the database
+2018-11-21 06:19:52,049 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_user"
+2018-11-21 06:19:52,049 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "UserAssociation" has no table in the database
+2018-11-21 06:19:52,049 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.userassociation"
+2018-11-21 06:19:52,049 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "UserAttribute" has no table in the database
+2018-11-21 06:19:52,050 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.cwd_user_attributes"
+2018-11-21 06:19:52,050 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "UserHistoryItem" has no table in the database
+2018-11-21 06:19:52,050 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.userhistoryitem"
+2018-11-21 06:19:52,050 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "UserPickerFilter" has no table in the database
+2018-11-21 06:19:52,050 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.userpickerfilter"
+2018-11-21 06:19:52,050 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "UserPickerFilterGroup" has no table in the database
+2018-11-21 06:19:52,051 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.userpickerfiltergroup"
+2018-11-21 06:19:52,051 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "UserPickerFilterRole" has no table in the database
+2018-11-21 06:19:52,051 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.userpickerfilterrole"
+2018-11-21 06:19:52,051 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Version" has no table in the database
+2018-11-21 06:19:52,061 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.projectversion"
+2018-11-21 06:19:52,061 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "VersionControl" has no table in the database
+2018-11-21 06:19:52,061 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.versioncontrol"
+2018-11-21 06:19:52,061 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "VoteHistory" has no table in the database
+2018-11-21 06:19:52,062 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.votehistory"
+2018-11-21 06:19:52,062 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Workflow" has no table in the database
+2018-11-21 06:19:52,062 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.jiraworkflows"
+2018-11-21 06:19:52,062 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "WorkflowScheme" has no table in the database
+2018-11-21 06:19:52,062 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.workflowscheme"
+2018-11-21 06:19:52,062 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "WorkflowSchemeEntity" has no table in the database
+2018-11-21 06:19:52,062 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.workflowschemeentity"
+2018-11-21 06:19:52,063 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Entity "Worklog" has no table in the database
+2018-11-21 06:19:52,063 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created table "PUBLIC.worklog"
+2018-11-21 06:19:52,065 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Action"
+2018-11-21 06:19:52,065 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Application"
+2018-11-21 06:19:52,066 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ApplicationUser"
+2018-11-21 06:19:52,066 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "AuditChangedValue"
+2018-11-21 06:19:52,066 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "AuditItem"
+2018-11-21 06:19:52,067 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "AuditLog"
+2018-11-21 06:19:52,075 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Avatar"
+2018-11-21 06:19:52,076 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ChangeGroup"
+2018-11-21 06:19:52,077 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ChangeItem"
+2018-11-21 06:19:52,078 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ClusterLockStatus"
+2018-11-21 06:19:52,078 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ClusterMessage"
+2018-11-21 06:19:52,078 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ClusterNode"
+2018-11-21 06:19:52,078 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ClusterNodeHeartbeat"
+2018-11-21 06:19:52,079 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ClusteredJob"
+2018-11-21 06:19:52,080 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ColumnLayout"
+2018-11-21 06:19:52,080 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ColumnLayoutItem"
+2018-11-21 06:19:52,084 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Component"
+2018-11-21 06:19:52,085 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ConfigurationContext"
+2018-11-21 06:19:52,085 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "CustomField"
+2018-11-21 06:19:52,085 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "CustomFieldOption"
+2018-11-21 06:19:52,085 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "CustomFieldValue"
+2018-11-21 06:19:52,086 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Directory"
+2018-11-21 06:19:52,086 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "DirectoryAttribute"
+2018-11-21 06:19:52,086 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "DirectoryOperation"
+2018-11-21 06:19:52,086 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "DraftWorkflow"
+2018-11-21 06:19:52,086 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "DraftWorkflowScheme"
+2018-11-21 06:19:52,086 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "DraftWorkflowSchemeEntity"
+2018-11-21 06:19:52,087 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "EntityProperty"
+2018-11-21 06:19:52,095 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "EntityPropertyIndexDocument"
+2018-11-21 06:19:52,095 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "EventType"
+2018-11-21 06:19:52,096 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ExternalEntity"
+2018-11-21 06:19:52,096 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ExternalGadget"
+2018-11-21 06:19:52,096 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FavouriteAssociations"
+2018-11-21 06:19:52,097 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Feature"
+2018-11-21 06:19:52,098 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldConfigScheme"
+2018-11-21 06:19:52,100 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldConfigSchemeIssueType"
+2018-11-21 06:19:52,100 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldConfiguration"
+2018-11-21 06:19:52,100 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldLayout"
+2018-11-21 06:19:52,101 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldLayoutItem"
+2018-11-21 06:19:52,101 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldLayoutScheme"
+2018-11-21 06:19:52,101 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldLayoutSchemeAssociation"
+2018-11-21 06:19:52,101 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldLayoutSchemeEntity"
+2018-11-21 06:19:52,101 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldScreen"
+2018-11-21 06:19:52,102 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldScreenLayoutItem"
+2018-11-21 06:19:52,102 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldScreenScheme"
+2018-11-21 06:19:52,102 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldScreenSchemeItem"
+2018-11-21 06:19:52,102 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FieldScreenTab"
+2018-11-21 06:19:52,102 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FileAttachment"
+2018-11-21 06:19:52,107 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "FilterSubscription"
+2018-11-21 06:19:52,108 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "GadgetUserPreference"
+2018-11-21 06:19:52,108 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "GenericConfiguration"
+2018-11-21 06:19:52,108 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "GlobalPermissionEntry"
+2018-11-21 06:19:52,110 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Group"
+2018-11-21 06:19:52,110 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "GroupAttribute"
+2018-11-21 06:19:52,116 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Issue"
+2018-11-21 06:19:52,117 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "IssueLink"
+2018-11-21 06:19:52,117 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "IssueLinkType"
+2018-11-21 06:19:52,117 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "IssueSecurityScheme"
+2018-11-21 06:19:52,117 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "IssueType"
+2018-11-21 06:19:52,117 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "IssueTypeScreenScheme"
+2018-11-21 06:19:52,118 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "IssueTypeScreenSchemeEntity"
+2018-11-21 06:19:52,118 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZBlobTriggers"
+2018-11-21 06:19:52,118 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZCalendars"
+2018-11-21 06:19:52,118 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZCronTriggers"
+2018-11-21 06:19:52,123 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZFiredTriggers"
+2018-11-21 06:19:52,124 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZJobDetails"
+2018-11-21 06:19:52,125 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZJobListeners"
+2018-11-21 06:19:52,125 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZLocks"
+2018-11-21 06:19:52,125 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZPausedTriggerGroups"
+2018-11-21 06:19:52,125 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZSchedulerState"
+2018-11-21 06:19:52,125 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZSimplePropTriggers"
+2018-11-21 06:19:52,125 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZSimpleTriggers"
+2018-11-21 06:19:52,125 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZTriggerListeners"
+2018-11-21 06:19:52,133 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "JQRTZTriggers"
+2018-11-21 06:19:52,134 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Label"
+2018-11-21 06:19:52,134 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "LicenseRoleDefault"
+2018-11-21 06:19:52,134 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "LicenseRoleGroup"
+2018-11-21 06:19:52,134 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ListenerConfig"
+2018-11-21 06:19:52,134 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "MailServer"
+2018-11-21 06:19:52,135 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ManagedConfigurationItem"
+2018-11-21 06:19:52,142 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Membership"
+2018-11-21 06:19:52,142 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "MovedIssueKey"
+2018-11-21 06:19:52,142 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "NodeAssociation"
+2018-11-21 06:19:52,142 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "NodeIndexCounter"
+2018-11-21 06:19:52,143 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Notification"
+2018-11-21 06:19:52,143 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "NotificationInstance"
+2018-11-21 06:19:52,143 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "NotificationScheme"
+2018-11-21 06:19:52,143 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OAuthConsumer"
+2018-11-21 06:19:52,144 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OAuthConsumerToken"
+2018-11-21 06:19:52,144 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OAuthServiceProviderConsumer"
+2018-11-21 06:19:52,144 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OAuthServiceProviderToken"
+2018-11-21 06:19:52,144 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSCurrentStep"
+2018-11-21 06:19:52,144 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSCurrentStepPrev"
+2018-11-21 06:19:52,145 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSGroup"
+2018-11-21 06:19:52,145 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSHistoryStep"
+2018-11-21 06:19:52,145 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSHistoryStepPrev"
+2018-11-21 06:19:52,145 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSMembership"
+2018-11-21 06:19:52,145 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSPropertyData"
+2018-11-21 06:19:52,145 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSPropertyDate"
+2018-11-21 06:19:52,145 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSPropertyDecimal"
+2018-11-21 06:19:52,146 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSPropertyEntry"
+2018-11-21 06:19:52,146 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSPropertyNumber"
+2018-11-21 06:19:52,146 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSPropertyString"
+2018-11-21 06:19:52,146 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSPropertyText"
+2018-11-21 06:19:52,146 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSUser"
+2018-11-21 06:19:52,146 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OSWorkflowEntry"
+2018-11-21 06:19:52,147 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "OptionConfiguration"
+2018-11-21 06:19:52,147 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Permission"
+2018-11-21 06:19:52,147 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "PermissionScheme"
+2018-11-21 06:19:52,147 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "PluginState"
+2018-11-21 06:19:52,147 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "PluginVersion"
+2018-11-21 06:19:52,155 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "PortalPage"
+2018-11-21 06:19:52,155 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "PortletConfiguration"
+2018-11-21 06:19:52,155 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Priority"
+2018-11-21 06:19:52,155 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ProductLicense"
+2018-11-21 06:19:52,155 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Project"
+2018-11-21 06:19:52,155 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ProjectCategory"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ProjectKey"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ProjectRole"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ProjectRoleActor"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "QRTZCalendars"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "QRTZCronTriggers"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "QRTZFiredTriggers"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "QRTZJobDetails"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "QRTZJobListeners"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "QRTZSimpleTriggers"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "QRTZTriggerListeners"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "QRTZTriggers"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ReindexComponent"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ReindexRequest"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "RememberMeToken"
+2018-11-21 06:19:52,157 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "RemoteAddress"
+2018-11-21 06:19:52,158 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "RemoteIssueLink"
+2018-11-21 06:19:52,158 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ReplicatedIndexOperation"
+2018-11-21 06:19:52,158 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Resolution"
+2018-11-21 06:19:52,158 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "RunDetails"
+2018-11-21 06:19:52,159 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "SchemeIssueSecurities"
+2018-11-21 06:19:52,159 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "SchemeIssueSecurityLevels"
+2018-11-21 06:19:52,160 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "SchemePermissions"
+2018-11-21 06:19:52,163 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "SearchRequest"
+2018-11-21 06:19:52,163 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "SequenceValueItem"
+2018-11-21 06:19:52,163 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "ServiceConfig"
+2018-11-21 06:19:52,164 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "SharePermissions"
+2018-11-21 06:19:52,164 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Status"
+2018-11-21 06:19:52,164 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "TrackbackPing"
+2018-11-21 06:19:52,164 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "TrustedApplication"
+2018-11-21 06:19:52,164 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "UpgradeHistory"
+2018-11-21 06:19:52,164 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "UpgradeVersionHistory"
+2018-11-21 06:19:52,165 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "User"
+2018-11-21 06:19:52,170 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "UserAssociation"
+2018-11-21 06:19:52,173 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "UserAttribute"
+2018-11-21 06:19:52,173 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "UserHistoryItem"
+2018-11-21 06:19:52,174 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "UserPickerFilter"
+2018-11-21 06:19:52,174 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "UserPickerFilterGroup"
+2018-11-21 06:19:52,174 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "UserPickerFilterRole"
+2018-11-21 06:19:52,174 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Version"
+2018-11-21 06:19:52,174 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "VersionControl"
+2018-11-21 06:19:52,175 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "VoteHistory"
+2018-11-21 06:19:52,175 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Workflow"
+2018-11-21 06:19:52,175 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "WorkflowScheme"
+2018-11-21 06:19:52,175 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "WorkflowSchemeEntity"
+2018-11-21 06:19:52,178 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Created declared indices for entity "Worklog"
+2018-11-21 06:19:52,191 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Database Product Name is HSQL Database Engine
+2018-11-21 06:19:52,191 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Database Product Version is 1.8.0
+2018-11-21 06:19:52,191 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Database Driver Name is HSQL Database Engine Driver
+2018-11-21 06:19:52,191 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [core.entity.jdbc.DatabaseUtil] Database Driver Version is 1.8.0
+2018-11-21 06:19:52,883 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.jira.startup.DatabaseChecklistLauncher] JIRA database startup checks completed successfully.
+2018-11-21 06:19:53,002 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.DefaultPluginManager] Preparing to shut down the plugin system
+2018-11-21 06:19:53,002 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.DefaultPluginManager] Shutting down the plugin system
+2018-11-21 06:19:53,046 Timer-1 ERROR      [atlassian.event.internal.AsynchronousAbleEventDispatcher] There was an exception thrown trying to dispatch event [com.atlassian.plugin.event.events.PluginModuleUnavailableEvent@4c4da022] from the invoker [SingleParameterMethodListenerInvoker{method=public void com.atlassian.plugin.manager.DefaultPluginManager.onPluginModuleUnavailable(com.atlassian.plugin.event.events.PluginModuleUnavailableEvent), listener=com.atlassian.jira.plugin.JiraPluginManager@25f16f7b}]
+java.lang.RuntimeException: service proxy has been destroyed
+	at com.atlassian.event.internal.SingleParameterMethodListenerInvoker.invoke(SingleParameterMethodListenerInvoker.java:54)
+	at com.atlassian.event.internal.AsynchronousAbleEventDispatcher$1$1.run(AsynchronousAbleEventDispatcher.java:48)
+	at com.google.common.util.concurrent.MoreExecutors$SameThreadExecutorService.execute(MoreExecutors.java:253)
+	at com.atlassian.event.internal.AsynchronousAbleEventDispatcher.dispatch(AsynchronousAbleEventDispatcher.java:107)
+	at com.atlassian.event.internal.EventPublisherImpl.invokeListeners(EventPublisherImpl.java:160)
+	at com.atlassian.event.internal.EventPublisherImpl.publish(EventPublisherImpl.java:79)
+	at com.atlassian.plugin.event.impl.DefaultPluginEventManager.broadcast(DefaultPluginEventManager.java:84)
+	at com.atlassian.plugin.osgi.factory.UnrecognizedModuleDescriptorServiceTrackerCustomizer.removedService(UnrecognizedModuleDescriptorServiceTrackerCustomizer.java:141)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerRemoved(ServiceTracker.java:922)
+	at org.osgi.util.tracker.AbstractTracked.untrack(AbstractTracked.java:351)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.serviceChanged(ServiceTracker.java:865)
+	at org.apache.felix.framework.util.EventDispatcher.invokeServiceListenerCallback(EventDispatcher.java:864)
+	at org.apache.felix.framework.util.EventDispatcher.fireEventImmediately(EventDispatcher.java:732)
+	at org.apache.felix.framework.util.EventDispatcher.fireServiceEvent(EventDispatcher.java:662)
+	at org.apache.felix.framework.Felix.fireServiceEvent(Felix.java:3726)
+	at org.apache.felix.framework.Felix.access$000(Felix.java:80)
+	at org.apache.felix.framework.Felix$2.serviceChanged(Felix.java:717)
+	at org.apache.felix.framework.ServiceRegistry.unregisterService(ServiceRegistry.java:135)
+	at org.apache.felix.framework.ServiceRegistrationImpl.unregister(ServiceRegistrationImpl.java:129)
+	at org.springframework.osgi.service.exporter.support.internal.support.ServiceRegistrationDecorator.unregister(ServiceRegistrationDecorator.java:65)
+	at org.springframework.osgi.util.OsgiServiceUtils.unregisterService(OsgiServiceUtils.java:41)
+	at org.springframework.osgi.service.exporter.support.OsgiServiceFactoryBean.unregisterService(OsgiServiceFactoryBean.java:372)
+	at org.springframework.osgi.service.exporter.support.OsgiServiceFactoryBean.unregisterService(OsgiServiceFactoryBean.java:362)
+	at org.springframework.osgi.service.exporter.support.AbstractOsgiServiceExporter.destroy(AbstractOsgiServiceExporter.java:84)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:151)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:487)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:462)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:430)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:853)
+	at org.springframework.osgi.context.support.AbstractOsgiBundleApplicationContext.destroyBeans(AbstractOsgiBundleApplicationContext.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:831)
+	at org.springframework.osgi.context.support.AbstractOsgiBundleApplicationContext.doClose(AbstractOsgiBundleApplicationContext.java:197)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.access$501(AbstractDelegatedExecutionApplicationContext.java:69)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext$2.run(AbstractDelegatedExecutionApplicationContext.java:214)
+	at org.springframework.osgi.util.internal.PrivilegedUtils.executeWithCustomTCCL(PrivilegedUtils.java:85)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.normalClose(AbstractDelegatedExecutionApplicationContext.java:210)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.close(DependencyWaiterApplicationContextExecutor.java:374)
+	at org.springframework.osgi.context.support.AbstractDelegatedExecutionApplicationContext.doClose(AbstractDelegatedExecutionApplicationContext.java:236)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:794)
+	at org.springframework.osgi.extender.internal.activator.ContextLoaderListener$1.run(ContextLoaderListener.java:522)
+	at org.springframework.osgi.extender.internal.util.concurrent.RunnableTimedExecution$MonitoredRunnable.run(RunnableTimedExecution.java:60)
+	at org.springframework.scheduling.timer.DelegatingTimerTask.run(DelegatingTimerTask.java:66)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+Caused by: org.springframework.osgi.service.importer.ServiceProxyDestroyedException: service proxy has been destroyed
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceDynamicInterceptor$ServiceLookUpCallback.doWithRetry(ServiceDynamicInterceptor.java:105)
+	at org.springframework.osgi.service.importer.support.internal.support.RetryTemplate.execute(RetryTemplate.java:83)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceDynamicInterceptor.lookupService(ServiceDynamicInterceptor.java:430)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceDynamicInterceptor.getTarget(ServiceDynamicInterceptor.java:415)
+	at org.springframework.osgi.service.importer.support.internal.aop.ServiceInvoker.invoke(ServiceInvoker.java:62)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invokeUnprivileged(ServiceTCCLInterceptor.java:56)
+	at org.springframework.osgi.service.util.internal.aop.ServiceTCCLInterceptor.invoke(ServiceTCCLInterceptor.java:39)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.osgi.service.importer.support.LocalBundleContextAdvice.invoke(LocalBundleContextAdvice.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at com.sun.proxy.$Proxy102.unregister(Unknown Source)
+	at com.atlassian.jira.less.impl.DynamicLookAndFeelUriResolver.disabled(DynamicLookAndFeelUriResolver.java:49)
+	at com.atlassian.plugins.less.UriResolverModuleDescriptor.disabled(UriResolverModuleDescriptor.java:29)
+	at com.atlassian.plugin.manager.DefaultPluginManager.publishModuleDisabledEvents(DefaultPluginManager.java:2067)
+	at com.atlassian.plugin.manager.DefaultPluginManager.notifyModuleDisabled(DefaultPluginManager.java:2054)
+	at com.atlassian.plugin.manager.DefaultPluginManager.onPluginModuleUnavailable(DefaultPluginManager.java:719)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.atlassian.event.internal.SingleParameterMethodListenerInvoker.invoke(SingleParameterMethodListenerInvoker.java:36)
+	... 43 more
+2018-11-21 06:19:55,104 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [jira.config.database.SystemDatabaseConfigurationLoader] Reading database configuration from /var/atlassian/application-data/jira/dbconfig.xml
+2018-11-21 06:19:55,900 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.jira.startup.DatabaseLauncher] 
+
+******************************************************************************************
+hsqldb is an in-memory database, and susceptible to corruption when abnormally terminated.
+DO NOT USE IN PRODUCTION, please switch to a regular database.
+******************************************************************************************
+
+2018-11-21 06:19:55,911 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.jira.startup.DatabaseLauncher] Setting isolation level to '1' as this is the only isolation level 'hsql' supports.
+2018-11-21 06:19:55,911 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.jira.startup.DatabaseLauncher] Database transactions enabled: true
+2018-11-21 06:19:55,912 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.jira.startup.DatabaseLauncher] Database transaction isolation level: 1
+2018-11-21 06:19:55,922 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.jira.startup.JiraStartupLogger] 
+
+Database configuration OK
+
+___ Database Configuration _________________
+
+     Loading entityengine.xml from                 : file:/opt/jira/atlassian-jira/WEB-INF/classes/entityengine.xml
+     Entity model field type name                  : hsql
+     Entity model schema name                      : PUBLIC
+     Database Version                              : HSQL Database Engine - 1.8.0
+     Database Driver                               : HSQL Database Engine Driver - 1.8.0
+     Database URL                                  : jdbc:hsqldb:/var/atlassian/application-data/jira/database/jiradb
+     Database JDBC config                          : hsql jdbc:hsqldb:/var/atlassian/application-data/jira/database/jiradb
+
+2018-11-21 06:19:55,970 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.jira.startup.ClusteringChecklistLauncher] JIRA clustering startup checks completed successfully.
+2018-11-21 06:19:55,970 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.jira.startup.JiraStartupLogger] 
+
+___ Starting the JIRA Plugin System _________________
+
+2018-11-21 06:19:55,970 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.DefaultPluginManager] Plugin system earlyStartup begun
+2018-11-21 06:20:06,580 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [factory.transform.stage.ScanDescriptorForHostClassesStage] The plugin 'atlassian-universal-plugin-manager-plugin-2.19.1.jar' uses a package 'org.apache.velocity.tools.generic' that is also exported by the application.  It is highly recommended that the plugin use its own packages.
+2018-11-21 06:20:15,024 http-bio-8181-exec-19 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [factory.transform.stage.ScanDescriptorForHostClassesStage] The plugin 'project-templates-plugin-3.13.jar' uses a package 'com.atlassian.jira.upgrade' that is also exported by the application.  It is highly recommended that the plugin use its own packages.
+2018-11-21 06:20:16,663 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.loaders.ScanningPluginLoader] No plugins found to be deployed
+2018-11-21 06:20:20,871 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Resolving 183 plugins
+2018-11-21 06:20:20,872 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Enabling 183 plugins: [com.atlassian.activeobjects.activeobjects-plugin, com.atlassian.activeobjects.jira.spi, com.atlassian.templaterenderer.api, com.atlassian.templaterenderer.atlassian-template-renderer-velocity1.6-plugin, com.atlassian.plugins.rest.atlassian-rest-module, com.atlassian.administration.atlassian-admin-quicksearch-jira, com.atlassian.analytics.analytics-client, com.atlassian.analytics.analytics-whitelist, com.atlassian.oauth.atlassian-oauth-consumer-spi, com.atlassian.oauth.atlassian-oauth-service-provider-spi, com.atlassian.jira.oauth.consumer, com.atlassian.bundles.json-20070829.0.0.1:20070829.0.0.1, com.atlassian.applinks.applinks-plugin, com.atlassian.atlassian-failure-cache-plugin, com.atlassian.auiplugin, com.atlassian.bundles.icu4j-3.8.0.1:3.8.0.1, com.atlassian.bundles.nekohtml-1.9.12.1:1.9.12.1, com.atlassian.crowd.embedded.admin, com.atlassian.gadgets.dashboard, rome.rome-1.0:1.0, com.atlassian.gadgets.directory, com.atlassian.gadgets.embedded, com.atlassian.gadgets.oauth.serviceprovider, com.atlassian.gadgets.opensocial, com.atlassian.gadgets.publisher, com.atlassian.healthcheck.atlassian-healthcheck, com.atlassian.hipchat.plugins.core, com.atlassian.httpclient.atlassian-httpclient-plugin, com.atlassian.upm.role-based-licensing-plugin, com.atlassian.upm.atlassian-universal-plugin-manager-plugin, org.apache.httpcomponents.httpclient-4.2.5:4.2.5, com.atlassian.jira.rest, com.atlassian.jira.plugins.jira-workflow-designer, com.atlassian.jira.plugins.workflow.sharing.jira-workflow-sharing-plugin, com.atlassian.jira.project-templates-plugin, com.atlassian.jira-core-project-templates, com.atlassian.jira-legacy-project-templates, com.atlassian.jira.collector.plugin.jira-issue-collector-plugin, com.atlassian.jira.ext.rpc, com.atlassian.jira.extra.jira-ical-feed, com.atlassian.plugins.atlassian-whitelist-api-plugin, com.atlassian.jira.gadgets, com.atlassian.jira.jira-admin-navigation-plugin, com.atlassian.jira.jira-application-properties-plugin, com.atlassian.plugins.avatar, com.atlassian.jira.jira-pluggable-avatar-support, com.atlassian.jira.jira-avatar-plugin, com.atlassian.jira.jira-baseurl-plugin, com.atlassian.plugins.atlassian-nav-links-plugin, com.atlassian.jira.jira-header-plugin, com.atlassian.jira.jira-invite-user-plugin, com.atlassian.jira.jira-issue-link-applinks-common-plugin, com.atlassian.jira.jira-view-issue-plugin, com.atlassian.jira.jira-issue-link-confluence-plugin, com.atlassian.jira.jira-issue-link-remote-jira-plugin, com.atlassian.jira.jira-issue-link-web-plugin, com.atlassian.jira.jira-issue-nav-components, com.atlassian.jira.jira-issue-nav-plugin, com.atlassian.jira.jira-languages.en_UK, com.atlassian.jira.jira-languages.en_US, com.atlassian.plugins.less-transformer-plugin, com.atlassian.jira.jira-less-integration, com.atlassian.jira.jira-mail-plugin, com.atlassian.jira.jira-monitoring-plugin, com.atlassian.jira.jira-my-home-plugin, com.atlassian.jira.jira-onboarding-assets-plugin, com.atlassian.jira.jira-postsetup-announcements-plugin, com.atlassian.jira.jira-project-config-plugin, com.atlassian.streams.streams-spi-5.4.18:5.4.18, com.atlassian.jira.jira-projects-plugin, com.atlassian.jira.jira-projects-issue-navigator, com.atlassian.jira.jira-quick-edit-plugin, com.atlassian.jira.jira-share-plugin, com.atlassian.jira.jira-soy-plugin, com.atlassian.jira.jira-tzdetect-plugin, com.atlassian.jira.jira-user-profile-plugin, com.atlassian.jira.lookandfeel, com.atlassian.jira.mobile, com.atlassian.jira.oauth.serviceprovider, com.atlassian.plugins.atlassian-remote-event-common-plugin, com.atlassian.streams.streams-api-5.4.18:5.4.18, com.atlassian.jira.plugins.jira-software-plugin, com.atlassian.jira.plugins.jira-bitbucket-connector-plugin, com.atlassian.jira.plugins.jira-transition-triggers-plugin, com.atlassian.jira.plugins.jira-development-integration-plugin, com.atlassian.jira.plugin.ext.bamboo, com.atlassian.jira.plugin.system.comment-panel:1.0, com.atlassian.jira.plugin.system.customfieldtypes:1.0, com.atlassian.jira.plugin.system.issueoperations:1.0, com.atlassian.jira.plugin.system.issuetabpanels:1.0, com.atlassian.jira.plugin.system.jirarenderers:1.0, com.atlassian.jira.plugin.system.license.roles:1.0, com.atlassian.jira.plugin.system.projectroleactors:1.0, com.atlassian.jira.plugin.system.renderers.wiki.macros:1.0, com.atlassian.jira.plugin.system.reports:1.0, com.atlassian.jira.plugin.system.workflow:1.0, com.atlassian.jira.plugin.system.workfloweditor.transition.tabs:1.0, com.atlassian.jira.plugin.wiki.contentlinkresolvers:1.0, com.atlassian.jira.plugin.wiki.renderercomponentfactories:1.0, com.atlassian.jira.plugins.greenhopper-marketing-plugin, com.atlassian.scala.plugins.scala-2.10-provider-plugin, com.atlassian.scala.plugins.jackson-module-scala-2.10-provider-plugin, com.atlassian.jira.plugins.inline-create.jira-inline-issue-create-plugin, com.atlassian.jira.plugins.jira-admin-helper-plugin, com.atlassian.jira.plugins.jira-auditing-plugin, com.atlassian.jira.plugins.jira-browser-metrics, com.atlassian.jira.plugins.jira-dnd-attachment-plugin, com.atlassian.support.healthcheck.support-healthcheck-plugin, com.atlassian.jira.plugins.jira-healthcheck-plugin, com.atlassian.jira.plugins.jira-importers-plugin, com.atlassian.jira.plugins.jira-importers-bitbucket-plugin, com.atlassian.jira.plugins.jira-importers-github-plugin, com.atlassian.jira.plugins.jira-importers-redmine-plugin, com.atlassian.jira.plugins.jira-password-policy-plugin, com.atlassian.jira.plugins.jira-wiki-editor, com.atlassian.webhooks.atlassian-webhooks-plugin, com.atlassian.jira.plugins.webhooks.jira-webhooks-plugin, com.atlassian.jira.rpc.jira-json-rpc-plugin, com.atlassian.jira.welcome.jira-welcome-plugin, com.atlassian.jirafisheyeplugin, com.atlassian.jirawallboard.atlassian-wallboard-plugin, com.atlassian.labs.atlassian-bot-killer, com.atlassian.plugins.base-hipchat-integration-plugin-api, com.atlassian.plugins.base-hipchat-integration-plugin, com.atlassian.plugins.atlassian-project-creation-plugin, com.atlassian.labs.hipchat.hipchat-for-jira-plugin, com.atlassian.mywork.mywork-common-plugin, com.atlassian.mywork.mywork-jira-provider-plugin, com.atlassian.oauth.admin, com.atlassian.oauth.consumer, com.atlassian.oauth.serviceprovider, com.atlassian.plugins.atlassian-awareness-capability, com.atlassian.plugins.atlassian-plugins-webresource-plugin, com.atlassian.plugins.atlassian-plugins-webresource-rest, com.atlassian.plugins.atlassian-remote-event-consumer-plugin, com.atlassian.plugins.atlassian-whitelist-ui-plugin, com.atlassian.plugins.browser.metrics.browser-metrics-plugin, com.atlassian.plugins.helptips.jira-help-tips, com.atlassian.plugins.issue-status-plugin, com.atlassian.plugins.jira-html5-attach-images, com.atlassian.plugins.jira-project-creation, com.atlassian.plugins.remote-link-aggregator-plugin, com.atlassian.plugins.jira-remote-link-aggregator-plugin, com.atlassian.plugins.jquery, com.atlassian.prettyurls.atlassian-pretty-urls-plugin, com.atlassian.sal.jira, com.atlassian.soy.soy-template-plugin, com.atlassian.streams, com.atlassian.streams.actions, com.atlassian.streams.core, com.atlassian.streams.jira.inlineactions, com.atlassian.streams.streams-jira-plugin, com.atlassian.streams.streams-thirdparty-plugin, com.atlassian.support.stp, com.springsource.com.sun.syndication-0.9.0:0.9.0, com.springsource.org.jdom-1.0.0:1.0.0, crowd-rest-application-management, crowd-rest-plugin, crowd.system.passwordencoders:1.0, jira.footer:1.0, jira.help.paths:1.0, jira.issueviews:1.0, jira.jql.function:1.0, jira.keyboard.shortcuts:1.0, jira.system.attachment.processors:1.0, jira.system.global.permissions:1.0, jira.system.project.permissions:1.0, jira.top.navigation.bar:1.0, jira.usage.hints:1.0, jira.user.format:1.0, jira.user.profile.panels:1.0, jira.webfragments.admin:1.0, jira.webfragments.browse.project.links:1.0, jira.webfragments.preset.filters:1.0, jira.webfragments.user.navigation.bar:1.0, jira.webfragments.user.profile.links:1.0, jira.webfragments.view.project.operations:1.0, jira.webresources:1.0, org.apache.httpcomponents.httpcore-4.2.4:4.2.4, tac.jira.languages.de_DE, tac.jira.languages.es_ES, tac.jira.languages.fr_FR, tac.jira.languages.ja_JP]
+2018-11-21 06:20:21,093 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.bundles.json-20070829.0.0.1' immediately ENABLED
+2018-11-21 06:20:21,203 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.bundles.icu4j-3.8.0.1' immediately ENABLED
+2018-11-21 06:20:21,208 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.bundles.nekohtml-1.9.12.1' immediately ENABLED
+2018-11-21 06:20:21,274 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'rome.rome-1.0' immediately ENABLED
+2018-11-21 06:20:22,319 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'org.apache.httpcomponents.httpclient-4.2.5' immediately ENABLED
+2018-11-21 06:20:22,436 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira-legacy-project-templates' immediately ENABLED
+2018-11-21 06:20:27,486 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.streams.streams-spi-5.4.18' immediately ENABLED
+2018-11-21 06:20:28,364 ThreadPoolAsyncTaskExecutor::Thread 4 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [spring.scanner.util.ProductFilterUtil] Detected product: JIRA
+2018-11-21 06:20:28,365 ThreadPoolAsyncTaskExecutor::Thread 15 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [spring.scanner.util.ProductFilterUtil] Detected product: JIRA
+2018-11-21 06:20:29,169 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.streams.streams-api-5.4.18' immediately ENABLED
+2018-11-21 06:20:42,168 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.comment-panel' immediately ENABLED
+2018-11-21 06:20:43,103 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.customfieldtypes' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.issueoperations' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.issuetabpanels' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.jirarenderers' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.license.roles' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.projectroleactors' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.renderers.wiki.macros' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.reports' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.workflow' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.system.workfloweditor.transition.tabs' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.wiki.contentlinkresolvers' immediately ENABLED
+2018-11-21 06:20:43,184 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugin.wiki.renderercomponentfactories' immediately ENABLED
+2018-11-21 06:20:59,833 http-bio-8181-exec-19 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [atlassian.plugin.manager.PluginEnabler] Plugin 'com.atlassian.jira.plugins.jira-browser-metrics' immediately ENABLED
+2018-11-21 06:21:34,945 Timer-3 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [internal.dependencies.startup.DependencyWaiterApplicationContextExecutor] Timeout occurred before finding service dependencies for [NonValidatingOsgiBundleXmlApplicationContext(bundle=com.atlassian.templaterenderer.atlassian-template-renderer-velocity16-plugin, config=osgibundle:/META-INF/spring/*.xml)]
+2018-11-21 06:23:37,829 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [internal.dependencies.startup.DependencyWaiterApplicationContextExecutor] Unable to create application context for [com.atlassian.templaterenderer.atlassian-template-renderer-velocity16-plugin], unsatisfied dependencies: Dependency on [(objectClass=com.atlassian.templaterenderer.TemplateContextFactory)] (from bean [&templateContextFactory])
+org.springframework.context.ApplicationContextException: Application context initialization for 'com.atlassian.templaterenderer.atlassian-template-renderer-velocity16-plugin' has timed out
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.timeout(DependencyWaiterApplicationContextExecutor.java:454)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.access$000(DependencyWaiterApplicationContextExecutor.java:50)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$WatchDogTask.run(DependencyWaiterApplicationContextExecutor.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2018-11-21 06:37:25,025 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [plugin.osgi.factory.OsgiPlugin] Plugin 'com.atlassian.templaterenderer.atlassian-template-renderer-velocity1.6-plugin' never resolved service '&templateContextFactory' with filter '(objectClass=com.atlassian.templaterenderer.TemplateContextFactory)'
+2018-11-21 06:48:23,184 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [plugin.osgi.factory.OsgiPlugin] Unable to start the plugin container for plugin 'com.atlassian.templaterenderer.atlassian-template-renderer-velocity1.6-plugin'
+org.springframework.context.ApplicationContextException: Application context initialization for 'com.atlassian.templaterenderer.atlassian-template-renderer-velocity16-plugin' has timed out
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.timeout(DependencyWaiterApplicationContextExecutor.java:454)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.access$000(DependencyWaiterApplicationContextExecutor.java:50)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$WatchDogTask.run(DependencyWaiterApplicationContextExecutor.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2018-11-21 06:55:07,989 ThreadPoolAsyncTaskExecutor::Thread 14 INFO anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [spring.scanner.util.ProductFilterUtil] Detected product: JIRA
+2018-11-21 07:14:54,142 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [extender.internal.activator.ContextLoaderListener] Application context refresh failed (NonValidatingOsgiBundleXmlApplicationContext(bundle=com.atlassian.templaterenderer.atlassian-template-renderer-velocity16-plugin, config=osgibundle:/META-INF/spring/*.xml))
+org.springframework.context.ApplicationContextException: Application context initialization for 'com.atlassian.templaterenderer.atlassian-template-renderer-velocity16-plugin' has timed out
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.timeout(DependencyWaiterApplicationContextExecutor.java:454)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.access$000(DependencyWaiterApplicationContextExecutor.java:50)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$WatchDogTask.run(DependencyWaiterApplicationContextExecutor.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2018-11-21 07:14:59,317 Timer-3 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [internal.dependencies.startup.DependencyWaiterApplicationContextExecutor] Timeout occurred before finding service dependencies for [NonValidatingOsgiBundleXmlApplicationContext(bundle=com.atlassian.templaterenderer.atlassian-template-renderer-api, config=osgibundle:/META-INF/spring/*.xml)]
+2018-11-21 07:15:03,288 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [internal.dependencies.startup.DependencyWaiterApplicationContextExecutor] Unable to create application context for [com.atlassian.templaterenderer.atlassian-template-renderer-api], unsatisfied dependencies: Dependency on [(objectClass=com.atlassian.sal.api.message.I18nResolver)] (from bean [&i18nResolver])
+org.springframework.context.ApplicationContextException: Application context initialization for 'com.atlassian.templaterenderer.atlassian-template-renderer-api' has timed out
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.timeout(DependencyWaiterApplicationContextExecutor.java:454)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.access$000(DependencyWaiterApplicationContextExecutor.java:50)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$WatchDogTask.run(DependencyWaiterApplicationContextExecutor.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2018-11-21 07:15:36,719 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [plugin.osgi.factory.OsgiPlugin] Plugin 'com.atlassian.templaterenderer.api' never resolved service '&i18nResolver' with filter '(objectClass=com.atlassian.sal.api.message.I18nResolver)'
+2018-11-21 07:15:50,651 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [plugin.osgi.factory.OsgiPlugin] Unable to start the plugin container for plugin 'com.atlassian.templaterenderer.api'
+org.springframework.context.ApplicationContextException: Application context initialization for 'com.atlassian.templaterenderer.atlassian-template-renderer-api' has timed out
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.timeout(DependencyWaiterApplicationContextExecutor.java:454)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.access$000(DependencyWaiterApplicationContextExecutor.java:50)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$WatchDogTask.run(DependencyWaiterApplicationContextExecutor.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2018-11-21 07:16:21,409 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [extender.internal.activator.ContextLoaderListener] Application context refresh failed (NonValidatingOsgiBundleXmlApplicationContext(bundle=com.atlassian.templaterenderer.atlassian-template-renderer-api, config=osgibundle:/META-INF/spring/*.xml))
+org.springframework.context.ApplicationContextException: Application context initialization for 'com.atlassian.templaterenderer.atlassian-template-renderer-api' has timed out
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.timeout(DependencyWaiterApplicationContextExecutor.java:454)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.access$000(DependencyWaiterApplicationContextExecutor.java:50)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$WatchDogTask.run(DependencyWaiterApplicationContextExecutor.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2018-11-21 07:16:34,621 Timer-3 WARN anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [internal.dependencies.startup.DependencyWaiterApplicationContextExecutor] Timeout occurred before finding service dependencies for [NonValidatingOsgiBundleXmlApplicationContext(bundle=com.atlassian.auiplugin, config=osgibundle:/META-INF/spring/*.xml)]
+2018-11-21 07:17:26,558 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [internal.dependencies.startup.DependencyWaiterApplicationContextExecutor] Unable to create application context for [com.atlassian.auiplugin], unsatisfied dependencies: Dependency on [(objectClass=com.atlassian.sal.api.features.DarkFeatureManager)] (from bean [&darkFeatureManager])
+org.springframework.context.ApplicationContextException: Application context initialization for 'com.atlassian.auiplugin' has timed out
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.timeout(DependencyWaiterApplicationContextExecutor.java:454)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor.access$000(DependencyWaiterApplicationContextExecutor.java:50)
+	at org.springframework.osgi.extender.internal.dependencies.startup.DependencyWaiterApplicationContextExecutor$WatchDogTask.run(DependencyWaiterApplicationContextExecutor.java:105)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2018-11-21 07:24:27,484 Timer-3 ERROR anonymous 379x52x1 e14xbf 124.123.85.187 /secure/SetupDatabase.jspa [plugin.osgi.factory.OsgiPlugin] Plugin 'com.atlassian.auiplugin' never resolved service '&darkFeatureManager' with filter '(objectClass=com.atlassian.sal.api.features.DarkFeatureManager)'

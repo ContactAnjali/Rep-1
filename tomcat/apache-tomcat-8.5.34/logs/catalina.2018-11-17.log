@@ -1,0 +1,63 @@
+17-Nov-2018 05:48:10.125 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.34
+17-Nov-2018 05:48:10.129 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 4 2018 22:28:22 UTC
+17-Nov-2018 05:48:10.129 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.34.0
+17-Nov-2018 05:48:10.129 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+17-Nov-2018 05:48:10.130 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.15.0-1027-aws
+17-Nov-2018 05:48:10.130 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+17-Nov-2018 05:48:10.130 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-8-oracle/jre
+17-Nov-2018 05:48:10.130 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_191-b12
+17-Nov-2018 05:48:10.131 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+17-Nov-2018 05:48:10.131 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /opt/tomcat/apache-tomcat-8.5.34
+17-Nov-2018 05:48:10.131 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /opt/tomcat/apache-tomcat-8.5.34
+17-Nov-2018 05:48:10.132 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/opt/tomcat/apache-tomcat-8.5.34/conf/logging.properties
+17-Nov-2018 05:48:10.132 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+17-Nov-2018 05:48:10.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+17-Nov-2018 05:48:10.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+17-Nov-2018 05:48:10.133 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+17-Nov-2018 05:48:10.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+17-Nov-2018 05:48:10.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/opt/tomcat/apache-tomcat-8.5.34
+17-Nov-2018 05:48:10.135 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/opt/tomcat/apache-tomcat-8.5.34
+17-Nov-2018 05:48:10.138 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/opt/tomcat/apache-tomcat-8.5.34/temp
+17-Nov-2018 05:48:10.139 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+17-Nov-2018 05:48:10.421 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8085"]
+17-Nov-2018 05:48:10.449 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Nov-2018 05:48:10.459 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+17-Nov-2018 05:48:10.468 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+17-Nov-2018 05:48:10.469 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1111 ms
+17-Nov-2018 05:48:10.517 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+17-Nov-2018 05:48:10.522 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.34
+17-Nov-2018 05:48:10.566 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war]
+17-Nov-2018 05:49:15.583 WARNING [localhost-startStop-1] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [64,405] milliseconds.
+17-Nov-2018 05:49:15.610 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/hello-world-war-1.0.0.war.war] has finished in [65,043] ms
+17-Nov-2018 05:49:15.611 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/host-manager]
+17-Nov-2018 05:49:15.677 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/host-manager] has finished in [66] ms
+17-Nov-2018 05:49:15.678 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/ROOT]
+17-Nov-2018 05:49:15.716 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/ROOT] has finished in [38] ms
+17-Nov-2018 05:49:15.716 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/examples]
+17-Nov-2018 05:49:16.167 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/examples] has finished in [451] ms
+17-Nov-2018 05:49:16.167 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/manager]
+17-Nov-2018 05:49:16.201 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/manager] has finished in [33] ms
+17-Nov-2018 05:49:16.202 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/docs]
+17-Nov-2018 05:49:16.233 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/tomcat/apache-tomcat-8.5.34/webapps/docs] has finished in [30] ms
+17-Nov-2018 05:49:16.240 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8085"]
+17-Nov-2018 05:49:16.260 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+17-Nov-2018 05:49:16.281 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 65811 ms
+17-Nov-2018 06:11:29.069 INFO [http-nio-8085-exec-10] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/Maven Hello World Build 2.war]
+17-Nov-2018 06:11:29.111 INFO [http-nio-8085-exec-10] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/Maven Hello World Build 2.war] has finished in [42] ms
+17-Nov-2018 06:27:47.297 INFO [http-nio-8085-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/Maven Auto Build.war]
+17-Nov-2018 06:27:47.355 INFO [http-nio-8085-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/Maven Auto Build.war] has finished in [57] ms
+17-Nov-2018 06:30:20.805 INFO [http-nio-8085-exec-7] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Maven Auto Build]
+17-Nov-2018 06:30:20.812 INFO [http-nio-8085-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/Maven Auto Build.war]
+17-Nov-2018 06:30:20.849 INFO [http-nio-8085-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/Maven Auto Build.war] has finished in [37] ms
+17-Nov-2018 06:33:29.126 SEVERE [ajp-nio-8009-exec-12] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [1025]
+17-Nov-2018 06:33:50.247 SEVERE [ajp-nio-8009-exec-11] org.apache.coyote.ajp.AjpMessage.processHeader Invalid message received with signature [18245]
+17-Nov-2018 10:00:22.579 INFO [http-nio-8085-exec-17] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/Maven Auto Build]
+17-Nov-2018 10:00:22.590 INFO [http-nio-8085-exec-17] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/Maven Auto Build.war]
+17-Nov-2018 10:00:22.624 INFO [http-nio-8085-exec-17] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/opt/tomcat/apache-tomcat-8.5.34/webapps/Maven Auto Build.war] has finished in [34] ms
+17-Nov-2018 10:06:52.833 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8085"]
+17-Nov-2018 10:06:52.840 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+17-Nov-2018 10:06:52.842 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+17-Nov-2018 10:06:53.071 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8085"]
+17-Nov-2018 10:06:53.076 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+17-Nov-2018 10:06:53.080 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8085"]
+17-Nov-2018 10:06:53.082 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
